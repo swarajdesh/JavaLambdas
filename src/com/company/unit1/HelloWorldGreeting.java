@@ -1,4 +1,6 @@
-package com.company;
+package com.company.unit1;
+
+import com.company.unit1.Greeting;
 
 public class HelloWorldGreeting implements Greeting {
     @Override

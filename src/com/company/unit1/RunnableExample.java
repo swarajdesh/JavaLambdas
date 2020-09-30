@@ -1,4 +1,4 @@
-package com.company;
+package com.company.unit1;
 
 public class RunnableExample {
 

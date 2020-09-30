@@ -1,9 +1,13 @@
-package com.company;
+package unit2;
 
-import java.util.*;
+import com.company.unit1.Person;
 
-public class Unit1ExerciseSolutionJava8 {
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.function.Predicate;
 
+public class StandardFuntionalInterfacesExample {
     public static void main(String[] args) {
 
         List<Person> people = Arrays.asList(
@@ -14,7 +18,7 @@ public class Unit1ExerciseSolutionJava8 {
         );
 
         //Step 1 : Sort list by last name
-        Collections.sort(people, ( p1,  p2) -> p1.getLastName().compareTo(p2.getLastName()));
+        Collections.sort(people, (p1, p2) -> p1.getLastName().compareTo(p2.getLastName()));
 
         //Step 2 : Create a method that prints all elements in the list
         System.out.println("Print all peoples");
@@ -30,13 +34,12 @@ public class Unit1ExerciseSolutionJava8 {
 
     }
 
-    private static void printCondionally(List<Person> people, Condition condition){
+    private static void printCondionally(List<Person> people, Predicate<Person> predicate){
         for (Person p:
                 people) {
-            if (condition.test(p)){
+            if (predicate.test(p)){
                 System.out.println(p);
             }
         }
     }
 }
-

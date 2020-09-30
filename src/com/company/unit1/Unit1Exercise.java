@@ -1,4 +1,6 @@
-package com.company;
+package com.company.unit1;
+
+import com.company.unit1.Person;
 
 import java.util.Arrays;
 import java.util.List;
