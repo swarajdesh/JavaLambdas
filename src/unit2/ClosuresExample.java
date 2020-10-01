@@ -9,10 +9,11 @@ public class ClosuresExample {
         doProcess(a, i -> System.out.println(i + b));
     }
 
-    private static void doProcess(int i, Process p) {
+    public static void doProcess(int i, Process p) {
         p.Process(i);
     }
-    interface Process{
-        void Process(int i);
-    }
+
+}
+interface Process{
+    void Process(int i);
 }
